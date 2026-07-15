@@ -8,7 +8,7 @@ import java.util.TreeSet;
 import java.util.HashSet;
 
 public class EvidencijaPolaznika {
-    //private static Set<Polaznik> Polaznici = new TreeSet<>(new Provjera());
+    //private static Set<Polaznik> Polaznici = new TreeSet<>();
     //private static Set<Polaznik> Polaznici = new HashSet<>();
     public static void main(String[] args) throws IOException {
 
