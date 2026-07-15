@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+import java.util.Comparator;
 
-public class Provjera {
+class Provjera implements Comparator<Polaznik> {
+    public int compare(Polaznik o1, Polaznik o2) {
+        return o1.getPrezime().compareTo(o2.getPrezime());
+    }
 }
