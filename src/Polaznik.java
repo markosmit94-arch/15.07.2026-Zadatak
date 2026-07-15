@@ -39,4 +39,17 @@ public class Polaznik {
     public String toString() {
         return "\nIme: " + getIme() + "\nPrezime: " + getPrezime() + "\nEmail: " + getEmail();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Polaznik polaznik = (Polaznik) o;
+        return email.equals(polaznik.getEmail());
+    }
+
+    @Override
+    public int hashCode() {
+        return email.hashCode();
+    }
 }
